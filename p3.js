@@ -15,6 +15,7 @@ function nibun(a, b) {
 
     do {
         c = (a + b) / 2.0;  // 2分計算
+        console.log(c);
         if ((func_y(c) * func_y(a)) < 0) b = c;  // 式(1.2)
         else a = c;  // 式(1.3)
     } while (Math.abs(a - b) > EPS);  // 収束判別　式(1.4)の変形
